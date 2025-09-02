@@ -24,6 +24,13 @@ A few commands to be launched in the terminal:
 
 when trying to run a docker image not existing locally, Docker will try to download it from the Docker registry (library Docker Hub)
 
+## To remove local images 
+Youtube video: https://www.youtube.com/watch?v=hHTjlwhVvqA
++ *docker image remove <name>/<process_id>* --> we can use either the image name or the process id
++ *docker rmi <name>*
++ *docker image prune* --> to remove the dangling images. Careful, if an image is currently in-use, the image won't be deleted
++ *docker image prune -a* --> to remove all images without at least one container associated to them. Careful with it!
+
 ## The instructions in the docker file
 
 **FROM** to define the source image
@@ -39,3 +46,8 @@ when trying to run a docker image not existing locally, Docker will try to downl
 **VOLUME** to define the usable volumes
 
 **CMD** to define the command by default during the execution of the Docker containers
+
+## To publish on Docker Hub
+
++ *docker tag ocr-docker-build:latest YOUR_USERNAME/ocr-docker-build:latest* to create a link between our image ocr-docker-build:latest previously created and the image that will be sent on Docker Hub
++ *docker push YOUR_USERNAME/ocr-docker-build:latest* to send the image on Docker Hub

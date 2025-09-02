@@ -12,10 +12,11 @@ A few commands to be launched in the terminal:
 
 + *docker images* --> displays all the Docker images present on the computer
 + *docker ps* --> ps like "process status" ; displays the docker images currently running on the computer
-+ *docker pull <name_of_the_image> --> will download the image of the associated name
-+ *docker run -it <name_of_the_image> --> to launch the Docker image named "name". -it means "iteratif"+ 
-+ *docker run -it -d <name_of_the_image> --> to launch the Docker image named "name". -it means "iteratif" ; -d means "detached" and the image is running in background 
-+ *docker stop <process_id> --> to stop the docker image. To get the process id, use docker ps
++ *docker pull <name_of_the_image>* --> will download the image of the associated name
++ *docker build -t ocr-docker-build .* --> to build the docker image. -t is to rename and . is to define where it is built
++ *docker run -it <name_of_the_image>* --> to launch the Docker image named "name". -it means "iteratif"+ 
++ *docker run -it -d <name_of_the_image>* --> to launch the Docker image named "name". -it means "iteratif" ; -d means "detached" and the image is running in background 
++ *docker stop <process_id>* --> to stop the docker image. To get the process id, use docker ps
 + *docker run -d -p 8080:80 nginx* --> -p let to define the used ports, so by opening http://127.0.0.1:8080, we can see the server nginx running
 + *docker exec -ti <process_id> bash* --> to enter the docker currently running and open a dedicated shell bash to navigate and change files of the site stored in *cd /usr/share/nginx/html*
 + *docker rm <process_id>* --> delete the image and all its contents

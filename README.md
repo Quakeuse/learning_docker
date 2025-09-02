@@ -23,3 +23,19 @@ A few commands to be launched in the terminal:
 + *docker system prune* --> to clean all the docker images
 
 when trying to run a docker image not existing locally, Docker will try to download it from the Docker registry (library Docker Hub)
+
+## The instructions in the docker file
+
+**FROM** to define the source image
+
+**RUN** to execute commands in the container
+
+**ADD** to add files into the container
+
+**WORKDIR** to define the work directory
+
+**EXPOSE** to define the listener ports by default
+
+**VOLUME** to define the usable volumes
+
+**CMD** to define the command by default during the execution of the Docker containers

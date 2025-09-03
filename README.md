@@ -51,3 +51,11 @@ Youtube video: https://www.youtube.com/watch?v=hHTjlwhVvqA
 
 + *docker tag ocr-docker-build:latest YOUR_USERNAME/ocr-docker-build:latest* to create a link between our image ocr-docker-build:latest previously created and the image that will be sent on Docker Hub
 + *docker push YOUR_USERNAME/ocr-docker-build:latest* to send the image on Docker Hub
+
+## Docker Compose
++ *docker-compose up -d* to start all the containers and run them in background
++ *docker-compose ps* to see the status of the stack
++ *docker-compose logs -f --tail 5$ to display the logs of the stack
++ *docker-compose stop* to stop all the services of a stack
++ *docker-compose down* to delete the ressources of a stack ;
++ *docker-compose config* to validate the syntax of the file docker-compose.yml

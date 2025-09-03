@@ -59,3 +59,6 @@ Youtube video: https://www.youtube.com/watch?v=hHTjlwhVvqA
 + *docker-compose stop* to stop all the services of a stack
 + *docker-compose down* to delete the ressources of a stack ;
 + *docker-compose config* to validate the syntax of the file docker-compose.yml
+
+Exemple taken from Docker Hub Wordpress to create the docker-compose.yml
+https://hub.docker.com/_/wordpress
